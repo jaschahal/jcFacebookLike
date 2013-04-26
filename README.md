@@ -18,10 +18,10 @@ jQuery(window).load(function(){
 		    applicationId: "123123123123",
                     layout:"button_count",
                         callbackLike:function(response) {
-                            jQuery("#log").append(jQuery("<div></div>").html("Liked: "+response));
+                            jQuery("#log").append(jQuery("&lt;div>&lt;/div>").html("Liked: "+response));
                         },
                         callbackUnLike:function(response) {
-                            jQuery("#log").append(jQuery("<div></div>").html("Un-Liked: "+response +" - <hr>Please think about your decision again. If this plugin could be a help then keep liking my FB page. I have got lot to share :)"));
+                            jQuery("#log").append(jQuery("&lt;div>&lt;/div>").html("Un-Liked: "+response +" - &lt;hr>Please think about your decision again. If this plugin could be a help then keep liking my FB page. I have got lot to share :)"));
                         }
 
                     });
