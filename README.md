@@ -23,7 +23,6 @@ jQuery(window).load(function(){
                         callbackUnLike:function(response) {
                             jQuery("#log").append(jQuery("&lt;div>&lt;/div>").html("Un-Liked: "+response +" - &lt;hr>Please think about your decision again. If this plugin could be a help then keep liking my FB page. I have got lot to share :)"));
                         }
-
                     });
                 })
 </code>
