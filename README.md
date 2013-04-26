@@ -13,18 +13,18 @@ A jQuery plugin to create Facebook Like button with Callbacks
 
 <code>
 jQuery(window).load(function(){
-                    jQuery("#myDiv").jcFacebookLike({/*href:"http://www.facebook.com/jaspreetchahal.org",*/
-                    show_faces:"false",
-		    applicationId: "123123123123",
-                    layout:"button_count",
-                        callbackLike:function(response) {
-                            jQuery("#log").append(jQuery("&lt;div>&lt;/div>").html("Liked: "+response));
-                        },
-                        callbackUnLike:function(response) {
-                            jQuery("#log").append(jQuery("&lt;div>&lt;/div>").html("Un-Liked: "+response +" - &lt;hr>Please think about your decision again. If this plugin could be a help then keep liking my FB page. I have got lot to share :)"));
-                        }
-                    });
-                })
+    jQuery("#myDiv").jcFacebookLike({href:"http://www.facebook.com/jaspreetchahal.org",
+    show_faces:"false",
+    applicationId: "123123123123",
+    layout:"button_count",
+	callbackLike:function(response) {
+	    jQuery("#log").append(jQuery("&lt;div>&lt;/div>").html("Liked: "+response));
+	},
+	callbackUnLike:function(response) {
+	    jQuery("#log").append(jQuery("&lt;div>&lt;/div>").html("Un-Liked: "+response +" - &lt;hr>Please think about your decision again. If this plugin could be a help then keep liking my FB page. I have got lot to share :)"));
+	}
+    });
+})
 </code>
 
 <h2>License</h2>
