@@ -12,6 +12,7 @@ A jQuery plugin to create Facebook Like button with Callbacks
 <h2>Usage</h2>
 
 <code>
+<pre>
 jQuery(window).load(function(){
     jQuery("#myDiv").jcFacebookLike({href:"http://www.facebook.com/jaspreetchahal.org",
     show_faces:"false",
@@ -25,6 +26,7 @@ jQuery(window).load(function(){
 	}
     });
 })
+</pre>
 </code>
 
 <h2>License</h2>
