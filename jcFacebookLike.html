@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>jQuery Facebook Like button generator Example</title>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.pack.js"></script>
+    <script type="text/javascript" src="jcFacebookLike.min.js"></script>
+    <style type="text/css">
+        #myDiv,#myDiv2 {
+            border: 10px solid rgba(140, 140, 82, .7);
+            -webkit-border-radius: 8px;
+            border-radius: 8px;
+            z-index: 10000;
+            width:400px;
+            padding:10px;
+            font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+    </style>
+        <script type="text/javascript">
+
+                jQuery(window).load(function(){
+                    jQuery("#myDiv").jcFacebookLike({href:"http://www.facebook.com/jaspreetchahal.org",
+                    show_faces:"false",
+                    layout:"button_count",
+                        callbackLike:function(response) {
+                            jQuery("#log").append(jQuery("<div></div>").html("Liked: "+response));
+                        },
+                        callbackUnLike:function(response) {
+                            jQuery("#log").append(jQuery("<div></div>").html("Un-Liked: "+response +" - <hr>Please think about your decision again. If this plugin could be a help then keep liking my FB page. I have got lot to share :)"));
+                        }
+
+                    });
+                })
+    </script>
+</head>
+<body>
+<div style="" >
+    <div id="myDiv"></div>
+<br>
+<br>
+<br>
+    <div id="log">
+    Logs will be written here once you like and unlike this page
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <strong>You will be liking this page http://jaspreetchahal.org</strong>
+
+</div>
+</body>
+</html>
+
